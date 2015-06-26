@@ -1,0 +1,24 @@
+{
+  "name": "React-Webpack",
+  "version": "0.0.0",
+  "description": "A simple webApp using React with Webpack!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server --config webpack.config.js --progress --colors --host '0.0.0.0' --port 8090 --inline"
+  },
+  "author": "Arun Ramachandran",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "react": "~0.13.3"
+  },
+  "devDependencies": {
+    "node-libs-browser": "~0.5.2",
+    "webpack": "~1.9.11",
+    "webpack-dev-server": "~1.9.0",
+    "jsx-loader": "~0.13.2",
+    "http-server": "~0.8.0"
+  }
+}
